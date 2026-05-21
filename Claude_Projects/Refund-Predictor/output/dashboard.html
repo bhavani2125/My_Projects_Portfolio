@@ -1,0 +1,61 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Return Intelligence Dashboard</title>
+        <style>
+            body { background-color: #0f0f0f; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; }
+            .container { max-width: 1200px; margin: 0 auto; }
+            .header { text-align: center; margin-bottom: 40px; }
+            .hero-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 40px; }
+            .card { background-color: #1a1a1a; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); text-align: center; border: 1px solid #333; }
+            .card h3 { color: #888; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 10px; }
+            .card .value { font-size: 1.8rem; font-weight: bold; color: #fff; }
+            .viz-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 20px; }
+            .viz-card { background-color: #1a1a1a; padding: 20px; border-radius: 10px; border: 1px solid #333; }
+            .viz-card img { width: 100%; border-radius: 5px; }
+            .strategy-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 40px; }
+            .strat-card { padding: 15px; border-radius: 8px; border-left: 5px solid; }
+            .FLAG { background: #2a1a1a; border-color: #ff4444; }
+            .FIX { background: #1a2a1a; border-color: #44ff44; }
+            .LIMIT { background: #2a2a1a; border-color: #ffff44; }
+            .MONITOR { background: #1a1a2a; border-color: #4444ff; }
+            .KEEP { background: #1a1a1a; border-color: #aaaaaa; }
+            .strat-title { font-weight: bold; display: block; margin-bottom: 5px; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Returns Intelligence Engine</h1>
+                <p>Predicting regret before shipment</p>
+            </div>
+
+            <div class="hero-grid">
+                <div class="card"><h3>Total Orders</h3><div class="value">15,000</div></div>
+                <div class="card"><h3>Overall Return Rate</h3><div class="value">25.9%</div></div>
+                <div class="card"><h3>Annual Return Cost</h3><div class="value">$996,379</div></div>
+                <div class="card"><h3>Top Signal</h3><div class="value">time_browsing_minutes</div></div>
+                <div class="card"><h3>Model Accuracy</h3><div class="value">77.2%</div></div>
+            </div>
+
+            <div class="viz-grid">
+                <div class="viz-card"><h3>Time Bomb: Hourly Risk</h3><img src="time_bomb.png"></div>
+                <div class="viz-card"><h3>Impulse Map: Correlation</h3><img src="impulse_map.png"></div>
+                <div class="viz-card"><h3>The Discount Curse</h3><img src="discount_curse.png"></div>
+                <div class="viz-card"><h3>Category Breakdown</h3><img src="category_returns.png"></div>
+                <div class="viz-card"><h3>Feature Importance</h3><img src="feature_importance.png"></div>
+                <div class="viz-card"><h3>Risk Distribution</h3><img src="risk_tiers.png"></div>
+            </div>
+
+            <div class="strategy-board">
+                <div class="strat-card FLAG"><span class="strat-title">FLAG</span>Orders with >60% risk score, especially Mobile+Impulse and Late-Night Fashion.</div>
+                <div class="strat-card FIX"><span class="strat-title">FIX</span>Fashion category (Rate: 47.0%) - Improve size guides.</div>
+                <div class="strat-card LIMIT"><span class="strat-title">LIMIT</span>Buy Now Pay Later and 25%+ discount tiers showing high return spikes.</div>
+                <div class="strat-card MONITOR"><span class="strat-title">MONITOR</span>Customers with previous_return_rate > 30%.</div>
+                <div class="strat-card KEEP"><span class="strat-title">KEEP</span>Desktop users with high browse time and high reviews read.</div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
