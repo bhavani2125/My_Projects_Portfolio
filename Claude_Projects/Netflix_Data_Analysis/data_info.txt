@@ -1,0 +1,34 @@
+Initial rows and columns: 5332, 12
+
+Missing values per column:
+show_id         0
+type            0
+title           0
+director        0
+cast            0
+country         0
+date_added      0
+release_year    0
+rating          0
+duration        0
+listed_in       0
+description     0
+
+Final rows and columns after cleaning: 5332, 12
+
+Dataset Information:
+       show_id   type    title                director         cast        country       date_added  release_year rating duration                     listed_in                                                                                                                                             description
+count     5332   5332     5332                    5332         5332           5332             5332   5332.000000   5332     5332                          5332                                                                                                                                                    5332
+unique    5332      2     5332                    3945         5200            604             1453           NaN     14      198                           335                                                                                                                                                    5321
+top         s8  Movie  Sankofa  Raúl Campos, Jan Suter  Samuel West  United States  January 1, 2020           NaN  TV-MA   94 min  Dramas, International Movies  With their biggest foe seemingly defeated, InuYasha and his friends return to everyday life. But the peace is soon shattered by an emerging new enemy.
+freq         1   5185        1                      18           10           1846               92           NaN   1822      135                           336                                                                                                                                                       2
+mean       NaN    NaN      NaN                     NaN          NaN            NaN              NaN   2012.742123    NaN      NaN                           NaN                                                                                                                                                     NaN
+std        NaN    NaN      NaN                     NaN          NaN            NaN              NaN      9.625831    NaN      NaN                           NaN                                                                                                                                                     NaN
+min        NaN    NaN      NaN                     NaN          NaN            NaN              NaN   1942.000000    NaN      NaN                           NaN                                                                                                                                                     NaN
+25%        NaN    NaN      NaN                     NaN          NaN            NaN              NaN   2011.000000    NaN      NaN                           NaN                                                                                                                                                     NaN
+50%        NaN    NaN      NaN                     NaN          NaN            NaN              NaN   2016.000000    NaN      NaN                           NaN                                                                                                                                                     NaN
+75%        NaN    NaN      NaN                     NaN          NaN            NaN              NaN   2018.000000    NaN      NaN                           NaN                                                                                                                                                     NaN
+max        NaN    NaN      NaN                     NaN          NaN            NaN              NaN   2021.000000    NaN      NaN                           NaN                                                                                                                                                     NaN
+
+Column Names:
+show_id, type, title, director, cast, country, date_added, release_year, rating, duration, listed_in, description
